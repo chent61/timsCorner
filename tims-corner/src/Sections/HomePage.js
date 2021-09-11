@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../Styles/App.css';
 import '../Styles/HomePage.css';
 import SmoothList from 'react-smooth-list';
 import Typist from 'react-typist';
@@ -7,13 +6,12 @@ import img from '../Images/logo.png';
 import {ImLinkedin, ImGithub, ImMail} from 'react-icons/im'
 import { Container } from 'react-bootstrap';
 
-
 function HomePage() {
   const [renderMsg, setRenderMsg] = useState(false)
 
   return (
-    <div className="homePage">
-      <img src={img}></img>
+    <div className="homePage" id="homepage">
+      <img src={img} className="logo"></img>
       <h1>
       <Typist className='title' 
         cursor={{ hideWhenDone: true}}
@@ -29,7 +27,7 @@ function HomePage() {
       </h1>
       <div className="subList">
       {renderMsg ? (
-      <SmoothList delay='1000'>
+      <SmoothList delay='1010'>
       <h3>Software Engineering and Management · McMaster University</h3>
       <Container>   
         <ImLinkedin color="white" size="50" className='iconLink'/>
