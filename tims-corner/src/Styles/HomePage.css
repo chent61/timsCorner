@@ -1,0 +1,20 @@
+ 
+.homePage {
+background-image: linear-gradient(
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3)
+  ),
+  url(../Images/taipei.jpeg);
+background-size: cover; 
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+}
+
+.title {
+    color: white;
+}
+  

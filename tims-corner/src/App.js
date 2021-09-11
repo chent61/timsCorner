@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './Styles/App.css';
+import HomePage from './Sections/HomePage';
 
 function App() {
   return (
     <div className="App">
+      <HomePage />
       <header className="App-header">
-          Learn Reactt
+          Learn React
       </header>
+      <div className="resumeSec">
+        Education & Experience 
+      </div>
     </div>
   );
 }
